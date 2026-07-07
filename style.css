@@ -231,7 +231,7 @@ nav {
 }
 .project__img {
     width: 100%;
-    transition: all 300ms ease;
+    transition: all 600ms ease;
 }
 .project:hover .project__img {
     transform: scale(1.07);
