@@ -103,6 +103,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="modal__half modal__contact">
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities!</h4>
@@ -122,7 +123,15 @@
                     <button id="contact__submit" class="form__submit">Send it my way</button>
                 </form>
 
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon. :)
+                </div>
+
             </div>
+            <i class="fa-solid fa-times modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
