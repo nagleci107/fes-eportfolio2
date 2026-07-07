@@ -48,9 +48,9 @@
                 <h1 class="title">Hey</h1>
                 <h1 class="title text--highlight">I'm Alex.</h1>
                 <p class="header__para">
-                    I'm a <b class="text--highlight">Frontend Software Engineer</b> with a strong passion for building web applications
+                    I'm a <b class="text--highlight">Frontend Developer</b> with a strong passion for building web applications
                     <br>
-                    Here's a bit more about me.
+                    Here's a bit more <span class="text--highlight">about me.</span>
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/alex-sharp-18708a211/" target="_blank" class="social__link click">
@@ -71,6 +71,59 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Web Developer</h4>
+                <p class="modal__para">
+                    I'm a 27 year-old American <b class="text--highlight">frontend developer</b> with a strong passion for designing websites with great <b class="text--highlight">user experiences.</b>
+                    <br>
+                    I currently work on projects using the following languages:
+                </p>
+                <div class="lang__list">
+                    <div class="lang">
+                        <figure class="lang__img--wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/250px-HTML5_Badge.svg.png" alt="HTML 5 logo" class="lang__img">
+                        </figure>
+                        <span class="lang__name">HTML</span>
+                        
+                    </div>
+                    <div class="lang">
+                        <figure class="lang__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" class="lang__img">
+                        </figure>
+                        <span class="lang__name">CSS</span>
+                        
+                    </div>
+                    <div class="lang">
+                        <figure class="lang__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" class="lang__img">
+                        </figure>
+                        <span class="lang__name">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities!</h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label" >Name</label>
+                        <input class="input" name="user_name" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">E-mail</label>
+                        <input class="input" name="user_email" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+
+            </div>
+        </div>
     </section>
     <section id="projects">
         <div class="container">
