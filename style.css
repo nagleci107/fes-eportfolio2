@@ -322,6 +322,8 @@ nav {
 
 
 .modal__contact {
+    display: flex;
+    flex-direction: column;
     background-color: #242424;
     color: white;
 }
