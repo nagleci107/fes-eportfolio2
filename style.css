@@ -63,6 +63,33 @@ p {
     transform: scale(0.8);
 }
 
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: -3px;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect--black::after {
+    background-color: black;
+}
+
+.link__hover-effect--white::after {
+    background-color: white;
+}
+
+.link__hover-effect:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 /* 
 
 LANDING 
@@ -247,4 +274,60 @@ nav {
     color: white;
     font-size: 20px;
     margin-right: 2rem;
+}
+
+/*
+
+* FOOTER
+
+*/
+
+footer {
+    background-color: #242424;
+    /* display: flex; */
+    padding: 6% 0;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__anchor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer__anchor:hover .footer__logo--popper{
+    transform: translateX(70px);
+    opacity: 1;
+}
+
+.footer__logo--img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0;
+}
+
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: white;
 }
