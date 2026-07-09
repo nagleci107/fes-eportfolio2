@@ -385,6 +385,10 @@ nav {
     padding: 2rem;
 }
 
+.modal__overlay--visible {
+    z-index: 1;
+}
+
 .modal__title {
     font-size: 26px;
 }

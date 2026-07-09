@@ -6,6 +6,17 @@
     <title>Alex Sharp</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e865365090.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "RJnD9jDZgJFajRUzv",
+            });
+        })();
+    </script>
     
 </head>
 <body>
@@ -107,10 +118,10 @@
             <div class="modal__half modal__contact">
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities!</h4>
-                <form id="contact__form" action="">
+                <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label" >Name</label>
-                        <input class="input" name="user_name" type="email" required></input>
+                        <input class="input" name="user_name" type="text" required></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">E-mail</label>
