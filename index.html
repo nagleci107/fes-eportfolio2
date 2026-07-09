@@ -41,7 +41,7 @@
                     link__hover-effect--black
                     " >Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#contact" class="
                     nav__link--anchor 
                     link__hover-effect 
@@ -61,7 +61,7 @@
                 <p class="header__para">
                     I'm a <b class="text--highlight">Frontend Developer</b> with a strong passion for building web applications
                     <br>
-                    Here's a bit more <span class="text--highlight">about me.</span>
+                    Here's a bit more <span class="text--highlight click" onclick="toggleModal()">about me.</span>
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/alex-sharp-18708a211/" target="_blank" class="social__link click">
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -116,6 +116,7 @@
             </div>
 
             <div class="modal__half modal__contact">
+                <i class="fa-solid fa-times modal__exit click"></i>
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities!</h4>
                 <form id="contact__form" onsubmit="contact(event)">
@@ -142,7 +143,7 @@
                 </div>
 
             </div>
-            <i class="fa-solid fa-times modal__exit click"></i>
+            
         </div>
     </section>
     <section id="projects">
