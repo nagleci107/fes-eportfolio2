@@ -174,17 +174,20 @@ header {
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
+    z-index: 2;
 }
 .header__para {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2;
     max-width: 500px;
+    z-index: 2;
 }
 
 .social__list {
     margin-top: 1rem;
     display: flex;
+    z-index: 2;
 }
 .social__link {
     background-color: rgb(35, 200, 35);
@@ -578,4 +581,50 @@ footer {
 .footer__copyright,
 .footer__logo--popper {
     color: white;
+}
+
+
+/*
+
+SHAPES 
+
+*/
+.shape {
+    position: fixed;
+}
+.shape--0 {
+    top: 15vh;
+    left: 5vw;
+}
+.shape--1 {
+    top: 15vh;
+    left: 50vw;
+}
+.shape--2 {
+    top: 15vh;
+    left: 80vw;
+}
+.shape--3 {
+    top: 50vh;
+    left: 5vw;
+}
+.shape--4 {
+    top: 50vh;
+    left: 50vw;
+}
+.shape--5 {
+    top: 50vh;
+    left: 80vw;
+}
+.shape--6 {
+    top: 80vh;
+    left: 5vw;
+}
+.shape--7 {
+    top: 80vh;
+    left: 50vw;
+}
+.shape--8 {
+    top: 80vh;
+    left: 80vw;
 }
