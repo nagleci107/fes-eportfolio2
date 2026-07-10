@@ -26,13 +26,13 @@
                 <img id="personal-logo" src="./as-assets/logo2.png" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#"
                     class="
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black
-                    ">About</a>
+                    " >About</a>
                 </li>
                 <li class="nav__link">
                     <a href="#projects" class="
@@ -42,7 +42,7 @@
                     " >Projects</a>
                 </li>
                 <li class="nav__link" onclick="toggleModal()">
-                    <a href="#contact" class="
+                    <a class="
                     nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black
@@ -116,7 +116,7 @@
             </div>
 
             <div class="modal__half modal__contact">
-                <i class="fa-solid fa-times modal__exit click"></i>
+                <i class="fa-solid fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities!</h4>
                 <form id="contact__form" onsubmit="contact(event)">
@@ -215,11 +215,11 @@
                     link__hover-effect
                     link__hover-effect--white
                     " target="_blank">LinkedIn</a>
-                    <a href="mailto:alexbesharp@outlook.com" class="
+                    <a href="#" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
-                    " target="_blank">Email</a>
+                    " onclick="toggleModal()">Contact</a>
                     <a href="./as-assets/Example Resume.pdf" class="
                     footer__social--link
                     link__hover-effect
