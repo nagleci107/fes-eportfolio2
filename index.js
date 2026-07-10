@@ -1,3 +1,17 @@
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList.add('dark-theme');
+    }
+    else {
+        document.body.classList.remove('dark-theme');
+    }
+}
+
+
 // template_pfw8cq7
 // service_d5247qe
 //public key RJnD9jDZgJFajRUzv
@@ -46,7 +60,7 @@ async function contact(event) {
 //     }
 // }
 
-let isModalOpen = false;
+
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = !isModalOpen;
